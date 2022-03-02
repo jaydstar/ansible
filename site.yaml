@@ -1,5 +1,5 @@
 ---
 - hosts: localhost
   tasks:
-  - name: Install Docker
-    ansible.builtin.shell: sudo yum -y install telnet
+  - name: Instal telnet
+    command: sudo yum -y install telnet
