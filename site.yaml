@@ -1,8 +1,5 @@
 ---
-- add_host:
-    name: "{{ item.dns_name }}"
-    groups: ec2-test
-  with_items: ec2.instances
+- hosts: localhost
   tasks:
     - name: ensure nginx is at the latest version
       apt: name=nginx state=latest
